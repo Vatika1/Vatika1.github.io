@@ -123,7 +123,7 @@
 
         <div class="about-grid">
           <div class="about-prose reveal">
-            <p>I'm a senior software engineer with 5 years building Java and Spring Boot backend systems at <strong>Morgan Stanley</strong> and <strong>Lockheed Martin</strong>. After several years inside large engineering organizations, I recently moved into independent consulting.</p>
+            <p>I'm a senior software engineer with 5 years building Java and Spring Boot backend systems at <strong>Morgan Stanley</strong> and <strong>Lockheed Martin</strong></p>
 
             <p>My current focus is cloud-native platform engineering — designing event-driven systems on AWS using Kafka, Kubernetes, and Terraform, with observability and resilience built in from the start. I'm bilingual EN/FR and based in Montreal.</p>
 
@@ -499,10 +499,12 @@
             </div>
             <p class="exp-context">Two client projects shipped to production.</p>
             <ul class="exp-bullets">
-              <li>Built a self-service invoice module within a Spring Boot monolith for a B2B subscription billing platform, owning end-to-end delivery from domain design through production deployment.</li>
-              <li>Designed JPA-based domain layer and REST APIs for invoice listing, retrieval, PDF generation (iText), and async email delivery via AWS SQS with idempotent processing, retries, and dead-letter queues.</li>
-              <li>Deployed a Spring Boot e-commerce platform to AWS, migrating a single-instance EC2 setup to multi-environment ECS Fargate with Terraform-managed VPC, RDS multi-AZ, Secrets Manager, and CloudWatch observability.</li>
-              <li>Built GitHub Actions CI/CD pipeline with automated testing, ECR image publishing, and rolling deployments across dev, staging, and production environments.</li>
+              <li>Built a full-stack client portal for a CAD services workflow where external clients submit and track work orders and internal staff manage them end-to-end — submission, file exchange, review, and approval — with Java 21, Spring Boot 3.5, PostgreSQL, and React/TypeScript.</li>
+              <li>Implemented role-based access with Spring Security and JWT, isolating each client's data while giving staff queue-wide visibility.</li>
+              <li>Modeled the order lifecycle as an explicit state machine with enforced transitions and a full audit trail.</li>
+              <li>Built direct-to-S3 file handling via presigned URLs with version history, keeping large uploads off the application layer.</li>
+              <li>Architected it as a modular monolith on AWS (ECS Fargate, RDS, S3) with in-process domain events for notifications — a deliberate choice over microservices for the scale.</li>
+              <li>Set up CI/CD with GitHub Actions and infrastructure-as-code with Terraform, with integration coverage via Testcontainers.</li>
             </ul>
             <ul class="pill-row tight">
               <li class="pill">Java 17</li>
